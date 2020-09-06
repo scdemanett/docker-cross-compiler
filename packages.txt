@@ -71,7 +71,6 @@ php5-common
 php5-json
 php5-readline
 pkg-config
-python2.7
 python3.8
 qemu-user-static
 readline-common
