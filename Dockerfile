@@ -1,6 +1,6 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
-MAINTAINER ricardo@droboports.com
+LABEL maintainer="stevendemanett@gmail.com"
 
 ENV USER_ID 1000
 ENV GROUP_ID 1000
@@ -23,6 +23,9 @@ RUN set -x; \
 COPY packages.txt /packages.txt
 
 RUN set -x; \
+    apt-get install software-properties-common
+    apt-add-repository universe
+    apt-get update
     apt-get -y install $(cat /packages.txt) && \
     apt-get clean && \
     apt-get autoclean
