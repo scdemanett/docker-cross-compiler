@@ -23,9 +23,9 @@ RUN set -x; \
 COPY packages.txt /packages.txt
 
 RUN set -x; \
-    apt-get install software-properties-common
-    apt-add-repository universe
-    apt-get update
+    apt-get install software-properties-common && \
+    apt-add-repository universe && \
+    apt-get update && \
     apt-get -y install $(cat /packages.txt) && \
     apt-get clean && \
     apt-get autoclean
