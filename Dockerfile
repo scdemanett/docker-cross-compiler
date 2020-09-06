@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:14.04
 
 MAINTAINER ricardo@droboports.com
 
@@ -23,7 +23,7 @@ RUN set -x; \
 COPY packages.txt /packages.txt
 
 RUN set -x; \
-    apt update && apt-get -y install $(cat /packages.txt) && \
+    apt-get -y install $(cat /packages.txt) && \
     apt-get clean && \
     apt-get autoclean
 
