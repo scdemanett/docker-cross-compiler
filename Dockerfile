@@ -1,4 +1,4 @@
-FROM ubuntu:20.04.01
+FROM ubuntu:20.04
 
 MAINTAINER ricardo@droboports.com
 
