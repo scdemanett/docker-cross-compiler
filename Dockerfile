@@ -16,7 +16,7 @@ RUN set -x; \
     add-apt-repository -y ppa:git-core/ppa && \
     add-apt-repository -y ppa:openjdk-r/ppa && \
     # add-apt-repository -y ppa:gophers/archive && \
-    apt-get -y update && \
+    apt-get -qq -y update && \
     apt-get clean && \
     apt-get autoclean
 
