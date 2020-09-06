@@ -16,14 +16,14 @@ RUN set -x; \
     add-apt-repository -y ppa:git-core/ppa && \
     add-apt-repository -y ppa:openjdk-r/ppa && \
     # add-apt-repository -y ppa:gophers/archive && \
-    apt-get -qq -y update && \
+    apt-get -y update && \
     apt-get clean && \
     apt-get autoclean
 
 COPY packages.txt /packages.txt
 
 RUN set -x; \
-    apt-get -y install $(cat /packages.txt) && \
+    apt-get -qq -y install $(cat /packages.txt) && \
     apt-get clean && \
     apt-get autoclean
 
