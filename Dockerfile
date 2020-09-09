@@ -58,13 +58,12 @@ RUN set -x; \
     gettext \
     git \
     git-svn \
-    golang-1.10-go \
     gperf \
     grep \
     gzip \
     intltool \
-    libgcrypt11-dev \
-    libncurses5-dev \
+    libgcrypt20-dev \
+    libncurses6-dev \
     libtool \
     libxml2-utils \
     m4 \
@@ -93,19 +92,14 @@ RUN set -x; \
     perl-base \
     perl-modules \
     php5-cli \
-    php5-common \
+    php-common \
     php5-json \
-    php5-readline \
     pkg-config \
     python3 \
     qemu-user-static \
     readline-common \
     realpath \
     rsync \
-    ruby1.9.1 \
-    ruby1.9.1-dev \
-    ruby2.0 \
-    ruby2.0-dev \
     rubygems-integration \
     scons \
     sed \
