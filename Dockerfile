@@ -96,7 +96,6 @@ RUN set -x; \
     python3 \
     qemu-user-static \
     readline-common \
-    realpath \
     rsync \
     rubygems-integration \
     scons \
