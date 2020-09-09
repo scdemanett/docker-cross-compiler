@@ -56,19 +56,19 @@ RUN set -x; \
 
 # Python cross-compiler
 RUN set -x; \
-    wget -O /tmp/xpython2.tgz https://github.com/droboports/python2/releases/download/v${PYTHON_VERSION}/xpython2.tgz && \
-    mkdir -p /home/drobo/xtools/python2/5n && \
-    tar -zxf /tmp/xpython2.tgz -C /home/drobo/xtools/python2/5n && \
-    rm -f /tmp/xpython2.tgz && \
+    wget -O /tmp/xpython3.tgz https://github.com/droboports/python3/releases/download/v${PYTHON_VERSION}/xpython3.tgz && \
+    mkdir -p /home/drobo/xtools/python3/5n && \
+    tar -zxf /tmp/xpython3.tgz -C /home/drobo/xtools/python3/5n && \
+    rm -f /tmp/xpython3.tgz && \
     chown -R drobo:drobo /home/drobo
 
 # Golang cross-compiler
-RUN set -x; \
-    wget -O /tmp/xgolang.tgz https://github.com/droboports/golang/releases/download/v${GOLANG_VERSION}/xgolang.tgz && \
-    mkdir -p /home/drobo/xtools/golang/5n && \
-    tar -zxf /tmp/xgolang.tgz -C /home/drobo/xtools/golang/5n && \
-    rm -f /tmp/xgolang.tgz && \
-    chown -R drobo:drobo /home/drobo
+# RUN set -x; \
+#     wget -O /tmp/xgolang.tgz https://github.com/droboports/golang/releases/download/v${GOLANG_VERSION}/xgolang.tgz && \
+#     mkdir -p /home/drobo/xtools/golang/5n && \
+#     tar -zxf /tmp/xgolang.tgz -C /home/drobo/xtools/golang/5n && \
+#     rm -f /tmp/xgolang.tgz && \
+#     chown -R drobo:drobo /home/drobo
 
 RUN set -x; \
     mkdir -p   /mnt/DroboFS/Shares/DroboApps /mnt/DroboFS/System /dist && \
