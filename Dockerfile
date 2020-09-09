@@ -63,7 +63,7 @@ RUN set -x; \
     gzip \
     intltool \
     libgcrypt20-dev \
-    libncurses6-dev \
+    libncurses-dev \
     libtool \
     libxml2-utils \
     m4 \
@@ -91,9 +91,7 @@ RUN set -x; \
     perl \
     perl-base \
     perl-modules \
-    php5-cli \
     php-common \
-    php5-json \
     pkg-config \
     python3 \
     qemu-user-static \
@@ -111,7 +109,6 @@ RUN set -x; \
     tig \
     tree \
     tzdata \
-    tzdata-java \
     u-boot-tools \
     unzip \
     vim-common \
