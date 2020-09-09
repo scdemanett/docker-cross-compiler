@@ -23,7 +23,7 @@ RUN set -x; \
 COPY packages.txt /packages.txt
 
 RUN set -x; \
-    apt-get update && apt-get install -y $(cat /packages.txt) && \
+    apt-get update && apt-get install -y curl && \
     apt-get clean && \
     apt-get autoclean
 
